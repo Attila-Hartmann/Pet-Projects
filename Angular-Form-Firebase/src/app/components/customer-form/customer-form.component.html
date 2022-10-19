@@ -1,0 +1,67 @@
+<div class="container mt-3">
+    <form [formGroup]="customerForm" (ngSubmit)="onSubmit()" class="row g-3">
+      <div class="col-md-6">
+        <label for="firstName" class="form-label"> First Name </label>
+        <input formControlName="firstName" type="text" class="form-control" id="firstName" />
+        <small
+        class="text-danger"
+        *ngIf="firstName?.invalid && firstName?.dirty"
+        >Érvénytelen keresztnév!</small>
+      </div>
+
+      <div class="col-md-6">
+        <label for="lastName" class="form-label"> Last Name </label>
+        <input formControlName="lastName" type="text" class="form-control" id="lastName" />
+        <small
+        class="text-danger"
+        *ngIf="lastName?.invalid && lastName?.dirty"
+        >Érvénytelen vezetéknév!</small>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input formControlName="email" type="email" class="form-control" id="email"
+        />
+        <small
+        class="text-danger"
+        *ngIf="email?.invalid && email?.dirty"
+        >Érvénytelen email cím!</small>
+      </div>
+
+      <div class="col-md-6">
+        <label for="gender" class="form-label">Gender</label>
+        <select formControlName="gender" id="gender" class="form-select">
+          <option *ngFor="let gender of genderList">{{gender}}</option>
+        </select>
+        <small
+        class="text-danger"
+        *ngIf="gender?.invalid && gender?.dirty"
+        >Kérjük válasszon!</small>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input formControlName="newsletter" class="form-check-input" type="checkbox" id="newsletter"/>
+          <label class="form-check-label" for="newsletter">
+            Subscribe to newsletter
+          </label>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input formControlName="isVIP" class="form-check-input" type="checkbox" id="isVIP"/>
+          <label class="form-check-label" for="isVIP">
+            VIP customer
+          </label>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button [disabled]="customerForm.invalid" class="btn btn-primary">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+

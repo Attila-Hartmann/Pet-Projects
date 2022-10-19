@@ -1,0 +1,23 @@
+li {
+  background: none;
+  // color: white;
+  // border: none;
+  // border-radius: 0.5em;
+  padding: 0 0.5em;
+  font-size: 1em;
+  transition: all 0.25s;
+}
+
+li:hover {
+  // border: 1px solid;
+  // border-color: #0d6efd;
+  // color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #0d6efd;
+  transform: translateY(-0.1em);
+}
+
+a.navbar-brand:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #0d6efd;
+  transform: translateY(-0.1em);
+  transition: all 0.25s;
+}

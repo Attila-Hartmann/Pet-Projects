@@ -1,0 +1,15 @@
+tr {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #0d6efd;
+  transform: translateY(-0.25em);
+  transition: all 0.25s;
+}
+
+table button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #f15959;
+  transform: translateY(-0.25em);
+  transition: all 0.25s;
+}

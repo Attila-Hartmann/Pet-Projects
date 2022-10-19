@@ -1,0 +1,406 @@
+{
+    "customers":  {
+      "-MwBiKOeh3sWkYkWxMVA": {
+        "id": 1,
+        "firstName": "Hinze",
+        "lastName": "Spiring",
+        "gender": "Other",
+        "email": "hspiring0@t-online.de",
+        "newsletter": true
+      },
+      "-MwBiKOfTkxw1g934253": {
+        "id": 2,
+        "firstName": "Abigail",
+        "lastName": "Solomon",
+        "gender": "Female",
+        "email": "asolomon1@forbes.com",
+        "newsletter": false
+      },
+      "-MwBiKOgUMHRmsdr1Zhw": {
+        "id": 3,
+        "firstName": "Ives",
+        "lastName": "Lamperd",
+        "gender": "Female",
+        "email": "ilamperd2@ocn.ne.jp",
+        "newsletter": true
+      },
+      "-MwBiKOhCq9jP4ZBg3hF": {
+        "id": 4,
+        "firstName": "Coleen",
+        "lastName": "Eustace",
+        "gender": "Male",
+        "email": "ceustace3@rambler.ru",
+        "newsletter": true
+      },
+      "-MwBiKOizWfv_D56Z10p": {
+        "id": 5,
+        "firstName": "Ricky",
+        "lastName": "Pudsall",
+        "gender": "Female",
+        "email": "rpudsall4@earthlink.net",
+        "newsletter": true
+      },
+      "-MwBiKOizWfv_D56Z10q": {
+        "id": 6,
+        "firstName": "Temp",
+        "lastName": "Baraclough",
+        "gender": "Male",
+        "email": "tbaraclough5@opensource.org",
+        "newsletter": true
+      },
+      "-MwBiKOjPrtK8An-4jO2": {
+        "id": 7,
+        "firstName": "Johna",
+        "lastName": "Audritt",
+        "gender": "Female",
+        "email": "jaudritt6@earthlink.net",
+        "newsletter": true
+      },
+      "-MwBiKOkUuGs7oUIVyB5": {
+        "id": 8,
+        "firstName": "Karole",
+        "lastName": "Nials",
+        "gender": "Other",
+        "email": "knials7@newsvine.com",
+        "newsletter": false
+      },
+      "-MwBiKOlli_FMAKnYqzR": {
+        "id": 9,
+        "firstName": "Chrystal",
+        "lastName": "McKeating",
+        "gender": "Female",
+        "email": "cmckeating8@drupal.org",
+        "newsletter": false
+      },
+      "-MwBiKOmPiQXyrpn1_YJ": {
+        "id": 10,
+        "firstName": "Hammad",
+        "lastName": "Mant",
+        "gender": "Female",
+        "email": "hmant9@instagram.com",
+        "newsletter": true
+      }
+    },
+    "vipCustomers": {
+      "-MwBiKOnnf8N3Df53IF1": {
+        "id": 11,
+        "firstName": "Shalom",
+        "lastName": "Fleckness",
+        "gender": "Male",
+        "email": "sflecknessa@wisc.edu",
+        "newsletter": true
+      },
+      "-MwBiKOo3FCzYT5NWzya": {
+        "id": 12,
+        "firstName": "Katerina",
+        "lastName": "Stolli",
+        "gender": "Male",
+        "email": "kstollib@redcross.org",
+        "newsletter": false
+      },
+      "-MwBiKOp_g0juNpLWZ9F": {
+        "id": 13,
+        "firstName": "Matteo",
+        "lastName": "Vesco",
+        "gender": "Male",
+        "email": "mvescoc@elpais.com",
+        "newsletter": true
+      },
+      "-MwBiKOqvtfl7X3X2tJ_": {
+        "id": 14,
+        "firstName": "Jarrid",
+        "lastName": "Dalgleish",
+        "gender": "Female",
+        "email": "jdalgleishd@google.ru",
+        "newsletter": true
+      },
+      "-MwBiKOr63I3wwfkTwys": {
+        "id": 15,
+        "firstName": "Dan",
+        "lastName": "Ballantyne",
+        "gender": "Male",
+        "email": "dballantynee@yelp.com",
+        "newsletter": false
+      },
+      "-MwBiKOsponaKXT0d1aS": {
+        "id": 16,
+        "firstName": "Georgeanne",
+        "lastName": "Reay",
+        "gender": "Male",
+        "email": "greayf@statcounter.com",
+        "newsletter": true
+      },
+      "-MwBiKOts6ZKJOcRD6-a": {
+        "id": 17,
+        "firstName": "Lewes",
+        "lastName": "Figgures",
+        "gender": "Female",
+        "email": "lfigguresg@apple.com",
+        "newsletter": true
+      },
+      "-MwBiKOulAhtTqg3hkZr": {
+        "id": 18,
+        "firstName": "Lia",
+        "lastName": "Amiranda",
+        "gender": "Male",
+        "email": "lamirandah@canalblog.com",
+        "newsletter": true
+      },
+      "-MwBiKOulAhtTqg3hkZs": {
+        "id": 19,
+        "firstName": "Laural",
+        "lastName": "Skittles",
+        "gender": "Male",
+        "email": "lskittlesi@delicious.com",
+        "newsletter": false
+      },
+      "-MwBiKOvYfXXGYKJ92nV": {
+        "id": 20,
+        "firstName": "Benjamin",
+        "lastName": "Casale",
+        "gender": "Male",
+        "email": "bcasalej@pinterest.com",
+        "newsletter": true
+      },
+      "-MwBiKOwTFuyAbOdpi84": {
+        "id": 21,
+        "firstName": "Fremont",
+        "lastName": "Moncaster",
+        "gender": "Male",
+        "email": "fmoncasterk@icio.us",
+        "newsletter": true
+      },
+      "-MwBiKOxygJTDEaGWyst": {
+        "id": 22,
+        "firstName": "Lazarus",
+        "lastName": "Lindbergh",
+        "gender": "Female",
+        "email": "llindberghl@cloudflare.com",
+        "newsletter": false
+      },
+      "-MwBiKOyVNH3D9H_wxL_": {
+        "id": 23,
+        "firstName": "Lexis",
+        "lastName": "Byng",
+        "gender": "Other",
+        "email": "lbyngm@un.org",
+        "newsletter": false
+      },
+      "-MwBiKOzpj1vxJSw3zvJ": {
+        "id": 24,
+        "firstName": "Hasheem",
+        "lastName": "Zelner",
+        "gender": "Male",
+        "email": "hzelnern@mashable.com",
+        "newsletter": true
+      },
+      "-MwBiKP-9x-hILHnoduV": {
+        "id": 25,
+        "firstName": "Edmund",
+        "lastName": "Yegoshin",
+        "gender": "Male",
+        "email": "eyegoshino@dion.ne.jp",
+        "newsletter": false
+      },
+      "-MwBiKP04nW7RHWcs1PU": {
+        "id": 26,
+        "firstName": "Vin",
+        "lastName": "Kohen",
+        "gender": "Female",
+        "email": "vkohenp@dot.gov",
+        "newsletter": false
+      },
+      "-MwBiKP1dgd2hyfuMLS3": {
+        "id": 27,
+        "firstName": "Lindsy",
+        "lastName": "Bezant",
+        "gender": "Female",
+        "email": "lbezantq@flickr.com",
+        "newsletter": false
+      },
+      "-MwBiKP2LCKeGzMyOOtX": {
+        "id": 28,
+        "firstName": "Ashbey",
+        "lastName": "Peret",
+        "gender": "Male",
+        "email": "aperetr@360.cn",
+        "newsletter": true
+      },
+      "-MwBiKP34m9f2_6hP4XE": {
+        "id": 29,
+        "firstName": "Cherye",
+        "lastName": "Paradyce",
+        "gender": "Male",
+        "email": "cparadyces@typepad.com",
+        "newsletter": true
+      },
+      "-MwBiKP4KAJ1yewwMFT9": {
+        "id": 30,
+        "firstName": "Jacynth",
+        "lastName": "Klessmann",
+        "gender": "Female",
+        "email": "jklessmannt@usda.gov",
+        "newsletter": true
+      },
+      "-MwBiKP5o1v4FdRWq0Ir": {
+        "id": 31,
+        "firstName": "Cristian",
+        "lastName": "Caller",
+        "gender": "Male",
+        "email": "ccalleru@google.fr",
+        "newsletter": false
+      },
+      "-MwBiKP5o1v4FdRWq0Is": {
+        "id": 32,
+        "firstName": "Charita",
+        "lastName": "Fulkes",
+        "gender": "Male",
+        "email": "cfulkesv@toplist.cz",
+        "newsletter": false
+      },
+      "-MwBiKP7TLrAHjPV8pr6": {
+        "id": 33,
+        "firstName": "Reube",
+        "lastName": "Olivo",
+        "gender": "Male",
+        "email": "rolivow@barnesandnoble.com",
+        "newsletter": false
+      },
+      "-MwBiKP7TLrAHjPV8pr7": {
+        "id": 34,
+        "firstName": "Cherri",
+        "lastName": "D'Avaux",
+        "gender": "Male",
+        "email": "cdavauxx@vk.com",
+        "newsletter": true
+      },
+      "-MwBiKP8UiOxhpY-VKZP": {
+        "id": 35,
+        "firstName": "Nikolas",
+        "lastName": "Goneau",
+        "gender": "Female",
+        "email": "ngoneauy@rakuten.co.jp",
+        "newsletter": false
+      },
+      "-MwBiKP9eldka8oV3Tao": {
+        "id": 36,
+        "firstName": "Van",
+        "lastName": "Gilleson",
+        "gender": "Male",
+        "email": "vgillesonz@printfriendly.com",
+        "newsletter": false
+      },
+      "-MwBiKPACie96xz3Kmvq": {
+        "id": 37,
+        "firstName": "Bernadene",
+        "lastName": "Guerola",
+        "gender": "Female",
+        "email": "bguerola10@amazonaws.com",
+        "newsletter": false
+      },
+      "-MwBiKPB0y5qw6UswJiX": {
+        "id": 38,
+        "firstName": "Genna",
+        "lastName": "Phizakarley",
+        "gender": "Female",
+        "email": "gphizakarley11@nymag.com",
+        "newsletter": true
+      },
+      "-MwBiKPCCqN8lMlYU9ap": {
+        "id": 39,
+        "firstName": "Ranee",
+        "lastName": "Archdeckne",
+        "gender": "Female",
+        "email": "rarchdeckne12@nyu.edu",
+        "newsletter": false
+      },
+      "-MwBiKPDG7kCoonVHAhR": {
+        "id": 40,
+        "firstName": "Abelard",
+        "lastName": "Jane",
+        "gender": "Male",
+        "email": "ajane13@cpanel.net",
+        "newsletter": false
+      },
+      "-MwBiKPEhDq5bgu2wB3w": {
+        "id": 41,
+        "firstName": "Viole",
+        "lastName": "Ivanishev",
+        "gender": "Male",
+        "email": "vivanishev14@nsw.gov.au",
+        "newsletter": false
+      },
+      "-MwBiKPFGwG7Dnysmdpd": {
+        "id": 42,
+        "firstName": "Meyer",
+        "lastName": "Lewtey",
+        "gender": "Male",
+        "email": "mlewtey15@netvibes.com",
+        "newsletter": false
+      },
+      "-MwBiKPGN3nYMkEyxU0m": {
+        "id": 43,
+        "firstName": "Tabby",
+        "lastName": "Labadini",
+        "gender": "Male",
+        "email": "tlabadini16@paypal.com",
+        "newsletter": true
+      },
+      "-MwBiKPHw9AgY05prB9f": {
+        "id": 44,
+        "firstName": "Andree",
+        "lastName": "MacMakin",
+        "gender": "Female",
+        "email": "amacmakin17@cnn.com",
+        "newsletter": true
+      },
+      "-MwBiKPICFImBZ1eRZj5": {
+        "id": 45,
+        "firstName": "Edi",
+        "lastName": "Trevers",
+        "gender": "Male",
+        "email": "etrevers18@whitehouse.gov",
+        "newsletter": true
+      },
+      "-MwBiKPJrP4RZScem1Fp": {
+        "id": 46,
+        "firstName": "Wat",
+        "lastName": "Fould",
+        "gender": "Female",
+        "email": "wfould19@google.cn",
+        "newsletter": false
+      },
+      "-MwBiKPKAB-9qZQsmgUh": {
+        "id": 47,
+        "firstName": "Guinna",
+        "lastName": "Squibb",
+        "gender": "Male",
+        "email": "gsquibb1a@sphinn.com",
+        "newsletter": false
+      },
+      "-MwBiKPKAB-9qZQsmgUi": {
+        "id": 48,
+        "firstName": "Bordy",
+        "lastName": "Iacovino",
+        "gender": "Male",
+        "email": "biacovino1b@wisc.edu",
+        "newsletter": false
+      },
+      "-MwBiKPLWSwN0hw3gsfW": {
+        "id": 49,
+        "firstName": "Laurette",
+        "lastName": "Greig",
+        "gender": "Female",
+        "email": "lgreig1c@reverbnation.com",
+        "newsletter": false
+      },
+      "-MwBiKPMg0XloSQzYK2-": {
+        "id": 50,
+        "firstName": "Leslie",
+        "lastName": "MacCrackan",
+        "gender": "Female",
+        "email": "lmaccrackan1d@geocities.com",
+        "newsletter": true
+      }
+    }
+  }
