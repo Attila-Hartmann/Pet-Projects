@@ -1,27 +1,41 @@
-import {Injectable} from '@angular/core';
-import {collection, doc, Firestore, getDocs, writeBatch} from "@angular/fire/firestore";
+import { Injectable } from '@angular/core';
+import {
+  collection,
+  doc,
+  Firestore,
+  getDocs,
+  writeBatch,
+} from '@angular/fire/firestore';
 import data from './data.json';
-import {Customer} from "../models/customer";
-import { AngularFirestore, DocumentReference } from '@angular/fire/compat/firestore';
+import { Customer } from '../models/customer';
+import {
+  AngularFirestore,
+  DocumentReference,
+} from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators'
+import { map } from 'rxjs/operators';
 import { collectionData } from 'rxfire/firestore';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CustomerService {
   private static readonly REGULAR_CUSTOMER_COLLECTION: string = 'customer';
   private static readonly VIP_CUSTOMER_COLLECTION: string = 'vipCustomer';
 
-  constructor(private firestore: Firestore, private afs: AngularFirestore) {
-  }
+  constructor(private firestore: Firestore, private afs: AngularFirestore) {}
 
   public async initializeDb(): Promise<void> {
     await this.dropCollection(CustomerService.REGULAR_CUSTOMER_COLLECTION);
     await this.dropCollection(CustomerService.VIP_CUSTOMER_COLLECTION);
-    await this.uploadCollection(CustomerService.REGULAR_CUSTOMER_COLLECTION, data.customers);
-    await this.uploadCollection(CustomerService.VIP_CUSTOMER_COLLECTION, data.vipCustomers);
+    await this.uploadCollection(
+      CustomerService.REGULAR_CUSTOMER_COLLECTION,
+      data.customers
+    );
+    await this.uploadCollection(
+      CustomerService.VIP_CUSTOMER_COLLECTION,
+      data.vipCustomers
+    );
   }
 
   private async dropCollection(collectionName: string): Promise<void> {
@@ -39,51 +53,42 @@ export class CustomerService {
     console.log(`Done!`);
   }
 
-  private async uploadCollection(collectionName: string, data: { [key: string]: Customer }): Promise<void> {
+  private async uploadCollection(
+    collectionName: string,
+    data: { [key: string]: Customer }
+  ): Promise<void> {
     console.log(`Uploading collection ${collectionName}`);
 
     const batch = writeBatch(this.firestore);
     for (let id in data) {
-      // delete data[id].id; // I'm way too lazy to do this by hand in the JSON :(
+      delete data[id].id;
       batch.set(doc(this.firestore, collectionName, id), data[id]);
     }
     await batch.commit();
     console.log(`Done!`);
   }
 
-  // TODO: add getCustomers(), getVipCustomers(), createCustomer() methods
-
-  public createCustomer(collName: string, customer: Customer): Promise<DocumentReference<Customer>> {
-    const customerCollection = this.afs.collection<Customer>(CustomerService.REGULAR_CUSTOMER_COLLECTION);
-    const vipCustomerCollection = this.afs.collection<Customer>(CustomerService.VIP_CUSTOMER_COLLECTION);
-    return collName === 'vipCustomer' ? vipCustomerCollection.add(customer) : customerCollection.add(customer);
+  // CREATE & READ customers
+  public createCustomer(
+    collName: string,
+    customer: Customer
+  ): Promise<DocumentReference<Customer>> {
+    const customerCollection = this.afs.collection<Customer>(
+      CustomerService.REGULAR_CUSTOMER_COLLECTION
+    );
+    const vipCustomerCollection = this.afs.collection<Customer>(
+      CustomerService.VIP_CUSTOMER_COLLECTION
+    );
+    return collName === 'vipCustomer'
+      ? vipCustomerCollection.add(customer)
+      : customerCollection.add(customer);
   }
-
-  // public getCustomers(): Observable<Customer[]> {
-  //   const customerCollection = this.afs.collection<Customer>(CustomerService.REGULAR_CUSTOMER_COLLECTION);
-  //   return customerCollection.get().pipe(
-  //     map((customers) => customers.docs.map((customer) => {
-  //       const convertedCustomer: any = customer.data();
-  //       convertedCustomer.id = customer.id;
-  //       return convertedCustomer
-  //     }))
-  //   )
-  // }
-
-  // public getVipCustomers(): Observable<Customer[]> {
-  //   const vipCustomerCollection = this.afs.collection<Customer>(CustomerService.VIP_CUSTOMER_COLLECTION);
-  //   return vipCustomerCollection.get().pipe(
-  //     map((vipCustomers) => vipCustomers.docs.map((vipCustomer) => {
-  //       const convertedCustomer: any = vipCustomer.data();
-  //       convertedCustomer.id = vipCustomer.id;
-  //       return convertedCustomer
-  //     }))
-  //   )
-  // }
 
   getUsers(collName: string): Observable<Customer[]> {
     const usersRef = collection(this.firestore, collName);
-    return collectionData(usersRef, {idField: '_id'}) as Observable<Customer[]>;
+    return collectionData(usersRef, { idField: '_id' }) as Observable<
+      Customer[]
+    >;
   }
 
   getCustomers(): Observable<Customer[]> {
@@ -91,9 +96,6 @@ export class CustomerService {
   }
 
   getVipCustomers(): Observable<Customer[]> {
-    return this.getUsers('vipCustomer')
+    return this.getUsers('vipCustomer');
   }
-
-
 }
-

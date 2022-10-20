@@ -1,4 +1,30 @@
-tr {
+section {
+
+  overflow-x: scroll;
+}
+
+section, section table {
+  transform: rotateX(180deg);
+}
+
+section::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+}
+
+section::-webkit-scrollbar-thumb {
+  background-color: #0d6efd;
+  border-radius: 4px;
+}
+
+
+
+section::-webkit-scrollbar-track {
+  background-color: #d6dfee;
+  border-radius: 4px;
+}
+
+tbody tr {
   cursor: pointer;
 }
 
@@ -8,8 +34,20 @@ tbody tr:hover {
   transition: all 0.25s;
 }
 
-table button:hover {
-  box-shadow: 0 0.5em 0.5em -0.4em #f15959;
-  transform: translateY(-0.25em);
+table button {
+  background: none;
+  color: #0d6efd;
+  border: 3px solid;
+  border-radius: 0.5em;
+  font-size: 1em;
   transition: all 0.25s;
 }
+table button:hover {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #0d6efd;
+  transform: translateY(-0.15em);
+}
+
+
