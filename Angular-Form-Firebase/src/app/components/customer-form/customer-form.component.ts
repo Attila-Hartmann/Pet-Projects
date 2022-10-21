@@ -53,7 +53,7 @@ export class CustomerFormComponent implements OnInit {
 
   nameValidator(name: AbstractControl): ValidationErrors | null {
     const pattern = /^.{3,15}$/;
-    return pattern.test(name.value) ? null : {nameError: 'Do not match name requirements'};
+    return pattern.test(name.value) ? null : {nameError: 'Does not match name requirements'};
 
   }
 
