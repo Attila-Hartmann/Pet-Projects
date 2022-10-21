@@ -1,6 +1,28 @@
 .card {
+  max-width: 20rem;
+  max-height: 90%;
+  box-shadow: 3px 3px 6px 1px #0d6dfd95;
   position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+a {
+  background: none;
+  color: #198754;
+  border: 3px solid;
+  border-radius: 0.5em;
+  font-size: 1em;
+  transition: all 0.25s;
+}
+
+a:hover {
+  background: #198754;
+  border-color: #198754;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #198754;
+  transform: translateY(-0.15em);
+}
+
+
