@@ -43,7 +43,7 @@ export class CustomerFormComponent implements OnInit {
     console.log(newCustomer);
     try {
       const customerRef = await this.customerService.createCustomer(collName, newCustomer);
-      console.log(customerRef.id);
+      alert(`New customer with ID: ${customerRef.id} added to database!`);
       this.customerForm.reset();
       this.customerForm.get('isVIP')?.enable();
     } catch (error) {
