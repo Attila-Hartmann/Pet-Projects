@@ -6,7 +6,7 @@
         <small
         class="text-danger"
         *ngIf="firstName?.invalid && firstName?.dirty"
-        >Érvénytelen keresztnév!</small>
+        >First Name must be 3-15 characters long!</small>
       </div>
 
       <div class="col-md-6">
@@ -15,7 +15,7 @@
         <small
         class="text-danger"
         *ngIf="lastName?.invalid && lastName?.dirty"
-        >Érvénytelen vezetéknév!</small>
+        >Last Name must be 3-15 characters long!</small>
       </div>
 
       <div class="col-md-6">
@@ -25,7 +25,7 @@
         <small
         class="text-danger"
         *ngIf="email?.invalid && email?.dirty"
-        >Érvénytelen email cím!</small>
+        >Invalid email address!</small>
       </div>
 
       <div class="col-md-6">
@@ -36,7 +36,7 @@
         <small
         class="text-danger"
         *ngIf="gender?.invalid && gender?.dirty"
-        >Kérjük válasszon!</small>
+        >Please select!</small>
       </div>
 
       <div class="col-12">
@@ -46,6 +46,10 @@
             Subscribe to newsletter
           </label>
         </div>
+        <small
+        class="text-danger"
+        *ngIf="newsletter?.invalid && newsletter?.dirty"
+        >Please subscribe to newsletter!</small>
       </div>
 
       <div class="col-12">
