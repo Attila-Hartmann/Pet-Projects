@@ -6,3 +6,8 @@
   •	Firebase / Firestore Database CRUD <br>
   •	Bootstrap <br>
   •	CSS/SCSS
+
+<strong>JS_Score_Tracker features:</strong> <br>
+  •	JavaScript DOM manipulations & events<br>
+  •	Bulma<br>
+  
