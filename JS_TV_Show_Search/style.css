@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: hsl(0, 0%, 21%);
+    min-height: 1200px;
+}
+
+h1 {
+  font-family: roboto;
+  font-weight: 700;
+}
+
+button {
+  background-color: #ff7e96 !important;
+  font-family: roboto;
+  font-weight: 700;
+}
+
+p {
+  color: white;
+  font-family: roboto;
+  font-weight: 700;
+}
+
+p span {
+  color: #ff7e96;
+}
+
+footer .image img {
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 100%;
+}
+
+footer img:hover {
+  transform: translateY(-0.25em);
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.card {
+    width: 18rem;
+    height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0.4em 0.4em 0.4em 0.1em #ff7e9666;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+.card-footer {
+  border: none;
+}
