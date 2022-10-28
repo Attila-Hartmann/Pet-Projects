@@ -9,5 +9,10 @@
 
 <strong>JS_Score_Tracker features:</strong> <br>
   •	JavaScript DOM manipulations & events<br>
-  •	Bulma<br>
+  •	Bulma
+  
+  <strong>JS_TV_Show_Search features:</strong> <br>
+  • AJAX using Axios<br>
+  • JavaScript DOM manipulations & events<br>
+  •	Bulma
   
