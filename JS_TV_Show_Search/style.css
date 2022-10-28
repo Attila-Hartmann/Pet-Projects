@@ -45,9 +45,8 @@ footer img:hover {
 }
 
 .card:hover {
-  box-shadow: 0.4em 0.4em 0.4em 0.1em #ff7e9666;
+  box-shadow: 0.3em 0.3em 0.3em 0.1em #ff7e9666;
   transform: translateY(-0.25em);
-  cursor: pointer;
 }
 
 .card-footer {
