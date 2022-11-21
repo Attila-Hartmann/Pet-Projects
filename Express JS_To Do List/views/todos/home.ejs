@@ -1,0 +1,28 @@
+<% layout('layouts/boilerplate') %>
+<div class="row">
+    <div class="col-6 offset-3 bg-white p-0 rounded-3 shadow to-do-container mb-3">
+        <div class="d-flex justify-content-between align-items-center mt-3 mx-3">
+            <h1><%=days[date.getDay()]%>, <%=date.getDate()%>th</h1>
+            <small class="text-muted ms-2"><%=toDos.length%> Tasks</small>
+        </div>
+        <h5 class="text-muted text-start ms-3"><%= months[date.getMonth()]%></h5>
+        <div class="d-flex justify-content-end align-items-center mb-3">
+            <hr style="width: 100%">
+            <a href="/todolist/new"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M22.2 38.35V25.8H9.65v-3.65H22.2V9.6h3.65v12.55H38.4v3.65H25.85v12.55Z"/></svg></a>
+            <hr style="width: 30px">
+        </div>
+        <% for (let todo of toDos) { %> 
+            <div class="m-0 p-2 d-flex justify-content-evenly align-items-center to-do-card rounded-3">
+                <input class="form-check-input mx-1 mt-0" type="checkbox" id="task"> 
+                <label for="task" class="form-check-label mx-1 text-left"><%=todo.task%></label>
+                <small class="text-muted me-1"><%=todo.time%></small>
+                <a class="btn btn-info ms-1 detail-button" href="/todolist/<%=todo.id%>"><img class="detail-view" src="/assets/info_FILL0_wght400_GRAD0_opsz48.png" alt="show details"></a>
+                <form class="mx-1" action="/todolist/<%=todo.id%>?_method=DELETE" method="POST" class="d-inline">
+                <button class="btn btn-danger delete-button"><img class="delete-item" src="/assets/delete_FILL0_wght400_GRAD0_opsz48.png" alt="show details"></button>
+                </form>
+            </div>
+            <% } %> 
+    </div>
+</div>
+
+

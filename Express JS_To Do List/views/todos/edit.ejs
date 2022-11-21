@@ -1,0 +1,37 @@
+<% layout('layouts/boilerplate') %>
+<div class="row">
+    <div class="col-6 offset-3 mb-2 rounded-3 edit-container bg-white shadow">
+        <h1 class="text-left mt-2">Edit To Do</h1>
+        <form action="/todolist/<%=foundToDo.id%>?_method=PUT" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="task">Task</label>
+                <input class="form-control" type="text" id="task" name="task" value="<%=foundToDo.task%>" pattern="^(?!\s*$).+" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide a task!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="time">Time</label>
+                <input class="form-control" type="time" id="time" name="time" value="<%=foundToDo.time%>" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide a time for your task!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="description"><%=foundToDo.description%></textarea>
+            </div>
+            <div class="mb-3 d-flex justify-content-evenly">
+                <button class="btn btn-success add-todo-button"><img class="add-todo" src="/assets/done_FILL0_wght400_GRAD0_opsz48.png" alt="updatre"></button>
+                <a class="btn btn-success return-button" href="/todolist/<%=foundToDo.id%> "><img class="return" src="/assets/arrow_back_FILL0_wght400_GRAD0_opsz48.png" alt="return to to do item"></a>
+                <a class="btn btn-info return-tolist-button" href="/todolist"><img src="/assets/list_FILL0_wght400_GRAD0_opsz48.png" class="return-tolist" alt="return to to do list"></a>
+            </div>
+        </form>
+    </div>
+</div>

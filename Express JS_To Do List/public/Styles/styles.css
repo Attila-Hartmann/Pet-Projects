@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;700&display=swap");
+body {
+  background-color: #5b5ee9;
+  font-family: Roboto;
+}
+
+h1, .show-card h5 {
+  color: #5b5be8;
+}
+
+.new-container, .to-do-container, .edit-container, .show-card {
+  min-width: 16.875rem;
+}
+
+.to-do-container a {
+  text-decoration: none;
+}
+
+svg {
+  border-radius: 50%;
+  background-color: #fd6f6e;
+}
+
+svg:hover {
+  background-color: #ffa19c;
+}
+
+img.detail-view {
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+img.delete-item {
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+.schedule-icon {
+  border-radius: 50%;
+  width: 1.8rem;
+}
+
+.add-todo, .return, .return-tolist, .edit-page-icon {
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+.add-todo-button, .edit-todo-button, .return-button, .edit-page-button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.add-todo-button, .edit-todo-button, .detail-button {
+  background-color: #9388ff;
+  border-color: #9388ff;
+}
+
+.add-todo-button:hover, .edit-todo-button:hover, .detail-button:hover {
+  background-color: #98ee99;
+  border-color: #98ee99;
+}
+
+.return-button, .delete-button {
+  background-color: #c53d43;
+  border-color: #c53d43;
+}
+
+.return-button:hover, .delete-button {
+  background-color: #ffa19c;
+  border-color: #ffa19c;
+}
+
+.return-tolist-button {
+  background-color: #9388ff;
+  border-color: #9388ff;
+}
+
+.return-tolist-button:hover {
+  background-color: #5f5bcb;
+  border-color: #5f5bcb;
+}
+
+input[type=checkbox] {
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
+input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+  background-color: #fd6f6e;
+}
+
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+}
+
+.to-do-card {
+  border-bottom: 0.5px solid #f5f5f5;
+  transition: all 0.25s;
+}
+
+.to-do-card:hover {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em #5b5be8;
+}
+
+.new-container label, .edit-container label {
+  color: #5b5be8;
+}
+
+.form-check-label {
+  display: inline-block;
+  width: 50%;
+}
+
+.page-not-found {
+  background-color: #ffa09b;
+}/*# sourceMappingURL=styles.css.map */
