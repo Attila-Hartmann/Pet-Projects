@@ -11,9 +11,6 @@ export class WeatherService {
 
   constructor(private http: HttpClient) { }
 
-
-
-
   getWeatherData(cityName: string): Observable<WeatherData> {
     return this.http.get<WeatherData>(environment.weatherApiBaseUrl+'/city/'+cityName, {
       headers: new HttpHeaders()
