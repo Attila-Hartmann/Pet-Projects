@@ -1,0 +1,132 @@
+<!-- <div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="Search city" name="city" [(ngModel)]="cityName">
+  </form>
+</div>
+
+<div class="container" *ngIf="weatherData">
+  <div class="container__upper-data">
+<img src="../assets/hot.jpg" alt="hot" *ngIf="(weatherData.main.temp -32) * 5/9 > 15">
+<img src="../assets/cold.jpg" alt="cold" *ngIf="(weatherData.main.temp -32) * 5/9 <= 15">
+
+
+  <div class="weather-data">
+    <div class="weather-data__location">{{ weatherData.name }}</div>
+    <div class="weather-data__temperature">{{ weatherData.main.temp | temperatureConverter | number: '1.0-0'}}°C</div>
+  </div>
+</div>
+
+  <div class="container__lower-data">
+    <div class="container__lower-data--more-info-label">
+      More Information
+    </div>
+    <div class="container__lower-data--more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/min.png" alt="min">
+          <span>min</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.main.temp_min | temperatureConverter | number: '1.0-0' }}°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/max.png" alt="min">
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.main.temp_max | temperatureConverter | number: '1.0-0' }}°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/humidity.png" alt="min">
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.main.humidity }}%
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/wind.png" alt="min">
+          <span>wind</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.wind.speed | number: '1.0-1' }} km/h
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="Search city" name="city" >
+  </form>
+</div>
+
+<div class="container">
+  <div class="container__upper-data">
+<img src="../assets/hot.jpg" alt="hot" *ngIf="(temperature -32) * 5/9 > 15">
+<img src="../assets/cold.jpg" alt="cold" *ngIf="(temperature -32) * 5/9 <= 15">
+
+
+  <div class="weather-data">
+    <div class="weather-data__location">{{cityName}}</div>
+    <div class="weather-data__temperature">{{ temperature | temperatureConverter | number: '1.0-0'}}°C</div>
+  </div>
+</div>
+
+  <div class="container__lower-data">
+    <div class="container__lower-data--more-info-label">
+      More Information
+    </div>
+    <div class="container__lower-data--more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/min.png" alt="min">
+          <span>min</span>
+        </div>
+        <div class="info-block-value">
+          {{ temperature | temperatureConverter | number: '1.0-0'}}°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/max.png" alt="min">
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          8°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/humidity.png" alt="min">
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          81%
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/wind.png" alt="min">
+          <span>wind</span>
+        </div>
+        <div class="info-block-value">
+          {{ 8.05 | number: '1.0-1'}} km/h
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
